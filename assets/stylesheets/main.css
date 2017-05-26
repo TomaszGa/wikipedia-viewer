@@ -1,0 +1,83 @@
+/* 
+Extra small devices (portrait phones, less than 544px) 
+*/
+    h1 {font-size:2.3rem;} /*1rem = 16px*/
+    .search-box{width: 90%;}
+    .header{margin-top: 2rem;}
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+ 
+
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) {  
+    h1 {font-size:2.8rem;} /*1rem = 16px*/
+    .search-box{width: 75%;}
+
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+    h1 {font-size:3.5rem;} /*1rem = 16px*/
+    .search-box{width: 60%;}
+
+}
+ 
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    h1 {font-size:4.2rem;} /*1rem = 16px*/
+    .search-box{width: 50%;}
+
+}
+/*=========================
+    END MEDIA QUERIES
+==========================*/
+body{
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    background-color: #F9F9F9;
+}
+a{
+    color: black;
+}
+h1{
+    padding-bottom: 5px;
+    font-family: "Cardo", serif;
+    font-weight: 900;
+}
+a:hover{
+    color: black;
+}
+.fa{
+    font-size: 40px;
+}
+.fa-footer{
+    font-size: 20px;
+}
+.result-box{
+  position: relative;
+  margin: 15px auto;
+  display: block;
+  text-align: left;
+  padding: 10px 5px 10px 10px;
+  height: 15%;
+  width: 80%;
+  border: 1px solid #C6C6C6;     
+  border-left: 3px solid #C6C6C6;
+  border-bottom: 3px solid #C6C6C6;
+  border-radius: 1px;
+}
+.search-box{
+margin-top: 1%;
+padding: 15px 15px;
+}
+.random-article{
+  font-size: 15px;
+  position: relative;
+  margin: 15px auto;
+  display: block;
+  
+}
