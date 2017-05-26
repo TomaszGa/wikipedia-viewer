@@ -6,6 +6,7 @@ $(document).ready(function () {
 
     //search button is clicked
     $("#searchSubmit").click(function () {
+
         wikiView.searchQuery();
     });
 
@@ -23,7 +24,7 @@ const wikiView = {
         $(".message").html("");
         const str = $("#searchField").val();
         if (str !== "") {
-            const linkString = "https://en.wikipedia.org/w/api.php?format=json&action=query&generator=search&gsrnamespace=0&gsrlimit=10&prop=pageimages|extracts&pilimit=max&exintro&explaintext&exsentences=1&exlimit=max&gsrsearch=" + str;
+            const linkString = "https://crossorigin.me/https://en.wikipedia.org/w/api.php?format=json&action=query&generator=search&gsrnamespace=0&gsrlimit=10&prop=pageimages|extracts&pilimit=max&exintro&explaintext&exsentences=1&exlimit=max&gsrsearch=" + str;
             $.getJSON(linkString, function (json) {
                 $.each(json.query.pages, function () {
                     let htmlString = "";
